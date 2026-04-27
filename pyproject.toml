@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airpods-battery-win"
+version = "1.0.0"
+description = "AirPods Pro battery monitor for Windows via BLE"
+authors = [{ name = "Alex" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bleak>=0.21.0",
+    "pystray>=0.19.5",
+    "Pillow>=10.0.0",
+]
+
+[project.scripts]
+airpods-battery = "src.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
