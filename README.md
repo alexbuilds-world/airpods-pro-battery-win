@@ -71,10 +71,6 @@ src/
 
 See `CONTRIBUTING.md` for local setup, build, and PR guidelines.
 
-## Contributors
-
-See `CONTRIBUTORS.md`.
-
 ## License
 
 This project is licensed under the MIT License. See `LICENSE`.

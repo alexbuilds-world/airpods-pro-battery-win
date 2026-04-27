@@ -1,5 +1,0 @@
-# Contributors
-
-- Alex
-- Codex
-- Claude
