@@ -1,6 +1,10 @@
 # AirPods Battery Monitor for Windows
 
-Displays AirPods Pro battery levels (left, right, case) in the Windows system tray via Bluetooth Low Energy (BLE).
+Displays AirPods Pro earbud battery levels in the Windows system tray via Bluetooth Low Energy (BLE).
+
+Tested with AirPods Pro 2 on Windows. Other AirPods models may work, but battery accuracy is not guaranteed.
+
+For the moment, the app does not show case battery. AirPods case battery data exposed through BLE on Windows can be stale or generic, so it is hidden until a reliable exact source is implemented.
 
 ## How it works
 
@@ -52,8 +56,9 @@ Open your AirPods case lid near your PC while scanning. Do not rely on a BLE add
 Apple's Proximity Pairing Message (type `0x07`) within the manufacturer data encodes:
 - Left earbud battery (0–10, multiply by 10 for %)
 - Right earbud battery (0–10, multiply by 10 for %)
-- Case battery (0–10, multiply by 10 for %)
 - Charging status flags
+
+Case battery may also appear in raw BLE data, but this app currently does not display it because it has not been reliable enough on Windows.
 
 ## Project structure
 
